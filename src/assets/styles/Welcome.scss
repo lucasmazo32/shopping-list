@@ -1,0 +1,56 @@
+.welcome {
+  h2 {
+    opacity: 0;
+    color: #030649;
+    font-size: 2.25rem;
+    margin-top: 0.75rem;
+    text-align: center;
+    animation: title 1.5s ease;
+    animation-fill-mode: forwards;
+  }
+  img {
+    max-width: 100%;
+    opacity: 0.8;
+    transform: translateY(calc(50vh - 80%))scale(1);
+    animation: image 2s ease;
+    animation-fill-mode: forwards;
+  }
+  .create-select {
+    opacity: 0;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(30vh);
+    animation: create 1.5s ease forwards 1s;
+  }
+  .btn-create {
+    border: 1px solid #030649;
+    background-color: white;
+    color: #030649;
+  }
+}
+
+@keyframes image {
+  0% {
+    opacity: 0.6;
+    transform: translateY(calc(50vh - 80%))scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(calc(50vh - 80%))scale(1.3);
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes create {
+  to {
+    opacity: 1;
+  }
+}

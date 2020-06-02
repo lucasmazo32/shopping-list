@@ -1,0 +1,99 @@
+.welcome h2 {
+  opacity: 0;
+  color: #030649;
+  font-size: 2.25rem;
+  margin-top: 0.75rem;
+  text-align: center;
+  -webkit-animation: title 1.5s ease;
+          animation: title 1.5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.welcome img {
+  max-width: 100%;
+  opacity: 0.8;
+  -webkit-transform: translateY(calc(50vh - 80%)) scale(1);
+          transform: translateY(calc(50vh - 80%)) scale(1);
+  -webkit-animation: image 2s ease;
+          animation: image 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.welcome .create-select {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform: translateY(30vh);
+          transform: translateY(30vh);
+  -webkit-animation: create 1.5s ease forwards 1s;
+          animation: create 1.5s ease forwards 1s;
+}
+
+.welcome .btn-create {
+  border: 1px solid #030649;
+  background-color: white;
+  color: #030649;
+}
+
+@-webkit-keyframes image {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: translateY(calc(50vh - 80%)) scale(0.8);
+            transform: translateY(calc(50vh - 80%)) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(calc(50vh - 80%)) scale(1.3);
+            transform: translateY(calc(50vh - 80%)) scale(1.3);
+  }
+}
+
+@keyframes image {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: translateY(calc(50vh - 80%)) scale(0.8);
+            transform: translateY(calc(50vh - 80%)) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(calc(50vh - 80%)) scale(1.3);
+            transform: translateY(calc(50vh - 80%)) scale(1.3);
+  }
+}
+
+@-webkit-keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes create {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes create {
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Welcome.css.map */
